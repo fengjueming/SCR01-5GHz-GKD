@@ -1,54 +1,59 @@
 {
-  id: 'com.samsung.android.mhshome',
+  id: 1,
   name: 'SCR01 Autoselect 5GHz',
-  author:'Jueming',
-  supportUri:'https://github.com/fengjueming/SCR01-5GHz-GKD'
-  groups: [
+  version: 1,
+  author: 'Jueming',
+  supportUri: 'https://github.com/fengjueming/SCR01-5GHz-GKD',
+  apps: [
     {
-      key: 1,
-      name: '5GHz for WifiSettings',
-      rules: [
-        {
-          quickFind: true,
-          activityIds: 'com.samsung.android.mhshome.wifisettings.wifi.WifiSettingsActivity',
-          matches: 'Button[text*="5"]',
-        },
-      ],
-    },
-    {
-      key: 2,
-      name: 'OK For WifiSettings',
-      rules: [
-        {
-          quickFind: true,
-          activityIds: 'com.samsung.android.mhshome.wifisettings.wifi.WifiSettingsActivity',
-          matches: 'TextView[text*="5"] < LinearLayout < LinearLayout < LinearLayout > ScrollView > LinearLayout > Button[text="OK"]',
-        },
-      ],
-    },
-    {
-      key: 3,
-      name: 'OK For WifiSettingsFBA',
-      rules: [
-        {
-          quickFind: true,
-          activityIds: 'com.samsung.android.mhshome.wifisettings.wifi.frequency.WifiFrequencyBandActivity',
-          matches: 'Button[text="OK"]',
-        },
-      ],
-    },
-    {
-      key: 4,
-      name: '5GHz for WifiSettingsFBA',
-      rules: [
-        {
-          quickFind: true,
-          activityIds: 'com.samsung.android.mhshome.wifisettings.wifi.frequency.WifiFrequencyBandActivity',
-          matches: 'Button[text*="5"]',
-        },
-      ],
-    },
-
+    id: 'com.samsung.android.mhshome',
+    name: 'MHSHome',
+    groups: [
+      {
+        key: 1,
+        name: '5GHz for WifiSettings',
+        rules: [
+          {
+            quickFind: true,
+            activityIds: 'com.samsung.android.mhshome.wifisettings.wifi.WifiSettingsActivity',
+            matches: 'Button[text*="5"]',
+          },
+        ],
+      },
+      {
+        key: 2,
+        name: 'OK For WifiSettings',
+        rules: [
+          {
+            quickFind: true,
+            activityIds: 'com.samsung.android.mhshome.wifisettings.wifi.WifiSettingsActivity',
+            matches: 'TextView[text*="5"] < LinearLayout < LinearLayout < LinearLayout > ScrollView > LinearLayout > Button[text="OK"]',
+          },
+        ],
+      },
+      {
+        key: 3,
+        name: 'OK For WifiSettingsFBA',
+        rules: [
+          {
+            quickFind: true,
+            activityIds: 'com.samsung.android.mhshome.wifisettings.wifi.frequency.WifiFrequencyBandActivity',
+            matches: 'Button[text="OK"]',
+          },
+        ],
+      },
+      {
+        key: 4,
+        name: '5GHz for WifiSettingsFBA',
+        rules: [
+          {
+            quickFind: true,
+            activityIds: 'com.samsung.android.mhshome.wifisettings.wifi.frequency.WifiFrequencyBandActivity',
+            matches: 'Button[text*="5"]',
+          },
+        ],
+      },
+    ],
+  },
   ],
 }
-
